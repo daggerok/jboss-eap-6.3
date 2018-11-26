@@ -22,7 +22,7 @@
 
 ############################################### USAGE ##################################################
 #                                                                                                      #
-# FROM daggerok/jboss-eap-6.3:6.3.0-centos                                                             #
+# FROM daggerok/jboss-eap-6.3:6.3.1-centos                                                             #
 #                                                                                                      #
 # # debug:                                                                                             #
 # ENV JAVA_OPTS="$JAVA_OPTS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"        #
@@ -53,7 +53,7 @@ ENV ADMIN_USER='admin'                                                          
     JDK_VERSION='jdk1.7.0_80'                                                                          \
     JBOSS_USER_HOME="/home/${JBOSS_USER}"                                                              \
     DOWNLOAD_BASE_URL="https://github.com/daggerok/${PRODUCT}/releases/download"                       \
-    JBOSS_EAP_PATCH='6.3.0'
+    JBOSS_EAP_PATCH='6.3.1'
 ENV JBOSS_HOME="${JBOSS_USER_HOME}/${PRODUCT}"                                                         \
     ARCHIVES_BASE_URL="${DOWNLOAD_BASE_URL}/archives"                                                  \
     PATCHES_BASE_URL="${DOWNLOAD_BASE_URL}/${JBOSS_EAP_PATCH}"
